@@ -2,10 +2,240 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>PORTFOLIO</title>
+
+  <!-- css -->
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./portfolioHeader.css">
+    <link rel="stylesheet" href="./portfolioCont.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./swiper.css">
+
+  <!-- js cdn & ui -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" ></script>
+  <!-- js -->
+  <script src="./portfolio.js"></script>
+
 </head>
 <body>
-  안녕하세요 git 파일입니다.
+  
+
+<div class="wrapper">
+
+  <header id="header">
+    <!-- Main-menu -->
+    <div class="left-sidebar">
+      <div class="moreBtn" style="display: none;"></div>
+
+      <nav class="left-sidebar-wrap" style="display: block;">
+        <div>close</div>
+        <ul class="main-menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#PortFolio">PortFolio</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#About">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Title -->
+    <div class="content-wrap">
+      <div class="visual-wrap">
+        <span class="leftree"></span>
+        <span class="cocatiel"></span>
+        <span class="rightree"></span>
+        <div class="title-text-wrap">
+          <p>PORTFOLIO</p>
+          <span>웹에서</span>
+          <span>자유로이</span>
+          <span>날아다니는</span>
+        </div>
+      </div>
+    </div>
+    <a href="#PortFolio" class="scroll-down">
+      <div class="scroll-down-btn"></div>
+    </a>
+  </header>
+
+  <div class="container">
+    <div id="PortFolio">
+      <h2>My Work</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div>WEB SITE <br> <br> <span>전라남도 나주시 평균연령 (2023년6월기준: 46.5세) 을 고려하여 <br> 
+              모두가 쉽게 알아볼 수 있도록 리디자인하여 코딩하였습니다.  </span></div>        
+            <div class="slide-box scroll1"><a href="#none">자세히 보기</a> </div>       
+          </div>
+
+          <div class="swiper-slide">
+            <div>RESPONSIVE <br> <br> <span>체중관련 기록 어플입니다. 기본 단순해보이는 홈페이지에서 <br> 
+              벗어나 다채롭고 온화하게 리디자인하여 코딩하였습니다.  </span></div>
+            <div class="slide-box scroll2"><a href="#none">자세히 보기</a></div>       
+          </div>
+
+          <div class="swiper-slide">제작중입니다</div>
+          <div class="swiper-slide">제작중입니다</div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          pagination: false
+            // el: ".swiper-pagination",
+            // clickable: true,
+          ,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          
+        });
+      </script>                                                                                                       
+    
+    </div>
+    <div id="About">
+      <h2>About</h2>
+
+      <div class="About-bg">
+        <div class="skill-wrap">
+
+          <div class="progressBar-L">
+            <div class="progressBar">
+              <h3>HTML - 90%</h3>
+              <div class="progressBar-line">
+                <div class="progressBar-value HTML"></div>
+              </div>
+            </div>
+
+            <div class="progressBar">
+              <h3>CSS - 85%</h3>
+              <div class="progressBar-line">
+                <div class="progressBar-value CSS"></div>
+              </div>
+            </div>
+
+            <div class="progressBar">
+              <h3>JQUERY - 65%</h3>
+              <div class="progressBar-line">
+                <div class="progressBar-value JQUERY"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressBar-R">
+
+            <div class="progressBar">
+              <h3>JS - 45%</h3>
+              <div class="progressBar-line">
+                <div class="progressBar-value JS"></div>
+              </div>
+            </div>
+
+            <div class="progressBar">
+              <h3>PHOTOSHOP - 50%</h3>
+              <div class="progressBar-line">
+                <div class="progressBar-value PHOTOSHOP"></div>
+              </div>
+            </div>
+
+            <div class="progressBar">
+              <h3>FIGMA - 80%</h3>
+              <div class="progressBar-line">
+                <div class="progressBar-value FIGMA"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ME -->
+        <div class="information-wrap">
+          <div class="me-L">
+            <div class="me">   
+              <h4>PROFILE</h4>
+              <p>박인희 INHEE-PARK</p>
+              <p>010-4767-1340</p>
+              <p>nioby9646 @ naver.com</p>
+              <p>서울특별시 동대문구 사가정로</p>
+              <p>강남 하이미디어아카데미 UX/UI 웹디자인&웹퍼블리셔 과정 수료 </p>
+            </div>
+
+            <div class="yes">
+              <h4>YES</h4>
+              <P>#긍정 #도전 #체력 #예의 #공감 #무한한가능성</P>
+            </div>
+
+            <div class="no">
+              <h4>NO</h4>
+              <P>#감정기복 #좌절 #험담 #우울</P>
+            </div>
+          </div>
+
+          <div class="me-R">
+            <h4 class="message">YOUR MESSAGE</h4>
+            <div class="formWrap">
+              <form id="user-form" action="" name="user-form">
+                <input type="hidden" name="receiverName" value="박인희">       
+                <input type="hidden" name="receiverEmail" value="nioby9646@naver.com">
+                <div class="form-group">
+                    <p>성함</p>
+                    <input type="text" name="senderName" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <p>이메일</p>
+                    <input type="email" name="senderEmail" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <p>내용</p>
+                    <textarea name="body"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="submit-btn" type="submit" value="전송">전송</button>
+                </div>
+
+                <span class="yoga"><img src="./img/yoga.png" alt=""></span>
+            </form>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+        
+      </div>
+    </div>
+
+  </div>
+  <footer id="footer"></footer>
+
+</div>
+
+
+
+
+
+
+
+
 </body>
 </html>
